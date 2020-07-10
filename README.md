@@ -10,7 +10,7 @@ A Repo for in-house Scripts developed by the Shandymen. These will mostly be dev
 Anyways, take a look through our Library. It is constantly getting updated. 
 If you have any requests, reach out to us!
 
-| Script | Description | Dependencies |
-| ------ | ----------- | ------------ |
-|**HashScan.py** | A simple Script that searches for any Hash, or list of hashes on Hashes.org (https://hashes.org). API Key is required (Which is free!) | Requests Module |
+| Script | Description | Additional Dependencies |
+| ------ | ----------- | ----------------------- |
+|**HashScan.py** | A simple Script that searches for any Hash, or list of hashes on Hashes.org (https://hashes.org). API Key is required (Which is free!) | N/A |
 
