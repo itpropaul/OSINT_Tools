@@ -4,7 +4,7 @@ A Repo for in-house Scripts developed by the Shandymen. These will mostly be dev
 | Name | How To Install |
 | ---- | -------------- |
 | **Python 3.8** | Download and Install from here: https://www.python.org/downloads |
-| **Requests** | In Command Prompt, run the command: *pip install requests* |
+| **Requests** | In Command Prompt, run the command: *pip install requests* (Requires Python) |
  
 
 Anyways, take a look through our Library. It is constantly getting updated. 
