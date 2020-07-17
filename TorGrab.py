@@ -1,3 +1,8 @@
+'''
+TorGrab - By Shandyman
+Version: 1.0
+Last Update: 17/7/20
+'''
 import os
 import sys
 import csv
