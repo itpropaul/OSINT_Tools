@@ -1,3 +1,9 @@
+'''
+HashScan - By Shandyman
+Version: 1.1
+Last Update: 17/7/20
+'''
+
 import sys
 import csv
 import json
@@ -10,8 +16,8 @@ global filebreak
 filebreak = "################"
 varbreak = "-----------------"
 def hashes(target_hash):
- 
-    api_key = <INSERT API KEY HERE!>
+    
+    api_key = "<API KEY HERE>"
     
     base_url = "https://hashes.org/api.php?key="
     query_url = "&query="
@@ -25,6 +31,7 @@ def hashes(target_hash):
         response = requests.get(final_url, verify=False)
         info = json.loads(response.content)
         
+        print(info)
         try:
             plain_pass = info["result"][target_hash]["plain"]
             plain_alg = info["result"][target_hash]["algorithm"]
@@ -40,9 +47,24 @@ def hashes(target_hash):
     except:
         print("Error finding that Hash!")
         print(filebreak)
+        
+def help():
+    
+    print("SYNTAX:")
+    print("hashscan.py <HASH>")
+    print("")
+    print("EXAMPLE:")
+    print("hashscan.py 5f4dcc3b5aa765d61d8327deb882cf99")
+    
 
 if __name__ == "__main__":
 
+    print("  _   _           _     ____                  ")
+    print(" | | | | __ _ ___| |__ / ___|  ___ __ _ _ __  ")
+    print(" | |_| |/ _` / __| '_ \\___ \  / __/ _` | '_ \ ")
+    print(" |  _  | (_| \__ \ | | |___) | (_| (_| | | | |")
+    print(" |_| |_|\__,_|___/_| |_|____/ \___\__,_|_| |_|")
+    print("")
     try:
         target_hash = sys.argv[1]
     except:
@@ -69,4 +91,7 @@ if __name__ == "__main__":
                     target_hash = firststrip.rstrip("']")
                     hashes(target_hash)
         else:
-            hashes(target_hash)
+            if target_hash == "-h":
+                help()
+            else:
+                hashes(target_hash)
