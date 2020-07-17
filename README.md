@@ -12,5 +12,5 @@ If you have any requests, reach out to us!
 
 | Script | Description | Additional Dependencies |
 | ------ | ----------- | ----------------------- |
-|[**HashScan.py**](https://github.com/Shandymen/OSINT_Tools/blob/master/HashScan.py) | A simple Script that searches for any Hash, or list of hashes on Hashes.org (https://hashes.org). API Key is required (Which is free!) | N/A |
+|[**HashScan.py**](https://github.com/Shandymen/OSINT_Tools/blob/master/HashScan.py) | A simple Script that searches for any Hash (MD5, SHA1, SHA256, etc) or list of hashes on Hashes.org (https://hashes.org), and attempts to find the decrypted plaintext message. API Key is required (Which is free!) | N/A |
 
